@@ -52,8 +52,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 
 
-#dont run anything past here while we troubleshoot
-streamlit.stop()
+
 
 #Query data from snowflake
 #import snowflake.connector
@@ -76,6 +75,8 @@ if streamlit.button('Get Fruit Load List'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_data_rows = get_fruit_load_lists()
     streamlit.dataframe(my_data_rows)
+#dont run anything past here while we troubleshoot
+streamlit.stop()
 
 #New secion to show fruityvice request Text box
 fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
