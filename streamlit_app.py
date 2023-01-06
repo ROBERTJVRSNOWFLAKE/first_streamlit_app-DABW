@@ -79,8 +79,8 @@ if streamlit.button('Get Fruit Load List'):
 streamlit.stop()
 
 #New secion to show fruityvice request Text box
-fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('Thanks for adding ', fruit_choice)
+# fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
+# streamlit.write('Thanks for adding ', fruit_choice)
 
-my_cur.execute("Insert into FRUIT_LOAD_LIST values ('from streamlit')")
+# my_cur.execute("Insert into FRUIT_LOAD_LIST values ('from streamlit')")
 
